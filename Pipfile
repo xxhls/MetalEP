@@ -1,5 +1,5 @@
 [[source]]
-url = "https://pypi.org/simple"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
 verify_ssl = true
 name = "pypi"
 
@@ -12,6 +12,7 @@ argparse = "*"
 torch = "==1.8.1"
 transformers = "*"
 h5py = "*"
+sentencepiece = "*"
 
 [dev-packages]
 
