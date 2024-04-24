@@ -26,3 +26,9 @@ def load_excel(excel_path: Path):
     for row in ws.iter_rows(values_only=True):
         data.append(row)
     return data
+
+def save_dict_as_fasta(data, path):
+    """将字典数据保存为fasta文件"""
+    with open(path, 'w') as f:
+        for key, value in data.items():
+            f.write(f'>{key}\n{value}\n')
