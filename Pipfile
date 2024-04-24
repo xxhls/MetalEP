@@ -13,6 +13,15 @@ torch = "==1.8.1"
 transformers = "*"
 h5py = "*"
 sentencepiece = "*"
+tensorflow = "==2.7.0"
+scikit-learn = "*"
+roc-utils = "*"
+protobuf = "==3.20.0"
+numpy = "==1.21.1"
+scipy = "*"
+matplotlib = "*"
+cython = "*"
+pandas = "*"
 
 [dev-packages]
 
