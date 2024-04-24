@@ -7,6 +7,9 @@ name = "pypi"
 jupyter = "*"
 openpyxl = "*"
 requests = "*"
+fair-esm = "*"
+argparse = "*"
+torch = "==1.8.1"
 
 [dev-packages]
 
