@@ -1,4 +1,4 @@
-from pickle import dump
+from pickle import dump, load
 from pathlib import Path
 from openpyxl import load_workbook
 
@@ -8,10 +8,15 @@ CACHE = ROOT / 'cache'
 if not CACHE.exists():
     CACHE.mkdir()
 
-def save_cache(data, name):
+def dump_cache(data, name):
     """保存数据到缓存文件"""
     with open(CACHE / name, 'wb') as f:
         dump(data, f)
+
+def load_cache(name):
+    """从缓存文件中读取数据"""
+    with open(CACHE / name, 'rb') as f:
+        return load(f)
 
 def load_excel(excel_path: Path):
     """读取Excel文件"""
